@@ -6,3 +6,5 @@
 
 **High Temperature**
 ![image](https://github.com/user-attachments/assets/6c902aca-1f4c-4c42-941f-0c407812ec70)
+
+Reference - https://rumn.medium.com/setting-top-k-top-p-and-temperature-in-llms-3da3a8f74832
