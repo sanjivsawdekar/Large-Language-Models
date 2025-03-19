@@ -293,7 +293,8 @@ meaningful results.
 - **τ → ∞:** The distribution becomes **uniform**, meaning all tokens
   have equal probability, leading to completely random outputs.
 
-**Visualization of how temperature affects probability distributions🔥**
+# Visualization of how temperature affects probability distributions🔥
+![image](https://github.com/user-attachments/assets/8f360937-4c1f-4b59-8f80-c7d040911aaa)
 
 Here’s a visualization of how **temperature (τ)** affects the
 probability distribution of tokens:
