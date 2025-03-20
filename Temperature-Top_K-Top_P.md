@@ -1,5 +1,4 @@
-**What is temperature, top_k and top_p in LLM? How it affects the output
-of LLM? Explained with example.**
+# What is temperature, top_k and top_p in LLM? How it affects the output of LLM? Explained with example.
 
 In Large Language Models (LLMs), **temperature, top_k, and top_p** are
 parameters that control the randomness and diversity of the generated
@@ -118,7 +117,7 @@ Prompt: *"She opened the ancient book and found"*
   - Use **high temperature (0.8 - 1.2), higher K (20-50), and higher P
     (0.9 - 1.0).**
 
-**What is the math behind this?**
+# What is the math behind this?
 
 The math behind **temperature, top-k, and top-p** sampling in LLMs is
 based on probability distributions and statistical sampling techniques.
@@ -270,7 +269,7 @@ tokens whose cumulative probability sums to P** (e.g., 0.9).
 | **Top-K** | Keeps the top K tokens and renormalizes probabilities. | Use when you want a fixed number of choices. |
 | **Top-P** | Selects the smallest set of tokens whose cumulative probability is ≥ P. | More dynamic and adaptive than Top-K. |
 
-**What is the range of Temperature values?**
+# What is the range of Temperature values?
 
 The **temperature (τ)** parameter in LLMs typically ranges from **0 to
 ∞**, but in practice, it is usually set between **0.1 and 2.0** for
@@ -294,7 +293,8 @@ meaningful results.
 - **τ → ∞:** The distribution becomes **uniform**, meaning all tokens
   have equal probability, leading to completely random outputs.
 
-**Visualization of how temperature affects probability distributions🔥**
+# Visualization of how temperature affects probability distributions🔥
+![image](https://github.com/user-attachments/assets/8f360937-4c1f-4b59-8f80-c7d040911aaa)
 
 Here’s a visualization of how **temperature (τ)** affects the
 probability distribution of tokens:
@@ -312,8 +312,7 @@ This explains why lower temperatures produce **deterministic, factual
 responses**, while higher temperatures encourage **creativity and
 diversity**. 🚀 ​​
 
-**How LLM selects the final output token if there are multiple tokens
-remains after applying temperature, top_k and top_p?**
+# How LLM selects the final output token if there are multiple tokens remains after applying temperature, top_k and top_p?
 
 After applying **temperature scaling, top-K, and top-P filtering**, the
 final token is selected using **random sampling** based on the adjusted
