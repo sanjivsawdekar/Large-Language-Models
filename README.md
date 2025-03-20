@@ -3,11 +3,11 @@
 ## Effect of Temperature, Top_K and Top_P on LLM output
 
 **A] Steps**
-1) Divide unnormalized log probabilities by Temperature.
-2) Select Top_K tokens with highest log probabilities.
-3) Select tokens with high probabilities suming upto Top_P.
-4) Apply Softmax on final tokens to generate re-normalized probabilities.
-5) Final output token is selected by Random Sampling (Nearest token probability to random value).
+1) Divide unnormalized log probabilities by **Temperature**.
+2) Select **Top_K** tokens with highest log probabilities.
+3) Select tokens with high probabilities suming upto **Top_P**.
+4) Apply **Softmax** on final tokens to generate re-normalized probabilities.
+5) Final output token is selected by **Random Sampling** (Nearest token probability to random value).
 
  
 **B] Low Temperature (Small Token Corpus)**
